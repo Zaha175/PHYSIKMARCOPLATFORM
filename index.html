@@ -66,23 +66,23 @@
       margin: 1em 0;
       padding: 0;
     }
-  .panel {
-  width: 95%;
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #000;
-  color: #00ffff;
-  text-align: left;
-  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  overflow: hidden;
-  border: 1px solid #00ffff;
-  position: relative; /* Hinzufügen von position: relative */
-  left: -30px;        /* Hinzufügen von left: -20px  (oder ein anderer passender Wert) */
-}
+    .panel {
+      width: 95%;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #000;
+      color: #00ffff;
+      text-align: left;
+      box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      overflow: hidden;
+      border: 1px solid #00ffff;
+      position: relative; /* Hinzufügen von position: relative */
+      left: -30px;        /* Hinzufügen von left: -20px  (oder ein anderer passender Wert) */
+    }
     .sidebar {
       width: 180px;
       display: flex;
@@ -279,17 +279,15 @@
       font-size: 1.3em; /* Slightly smaller heading */
       margin-bottom: 0.5em;
     }
-     .status-display.top-right #threejs-container_section2 {
-        height: 200px; /* Adjust height for top right section */
+    .status-display.top-right #threejs-container_section2 {
+      height: 200px; /* Adjust height for top right section */
     }
     .status-display.top-right iframe,
     .status-display.top-right .button,
     .status-display.top-right .network-diagram,
     .status-display.top-right p {
-        display: none; /* Hide iframe, buttons, network diagram and extra P in top right section */
+      display: none; /* Hide iframe, buttons, network diagram and extra P in top right section */
     }
-
-
   </style>
 </head>
 <body>
@@ -323,7 +321,6 @@
         Netzwerkdiagramm (Beispiel)
       </div>
   </div>
-
 
   <!-- Oberer Bereich: Westworld (Sidebar + MainContent + SystemLog) -->
   <div class="panel-section" id="host-detail">
@@ -412,7 +409,11 @@
             PHYSIKLEHRER PRÜFUNG PROBE GABRIEL ÖFFNEN <i class="fas fa-external-link-alt"></i>
           </button>
           <iframe src="https://zaha175.github.io/PHYSIKPRUEFUNG/" title="PHYSIKLEHRER SIMULATOR GABRIEL"></iframe>
-          </li>
+          <button class="button" onclick="window.open('https://zaha175.github.io/PHYSIKPANNELULTRA/', '_blank')">
+            PHYSIK ULTRA NACHHILFE ÖFFNEN <i class="fas fa-external-link-alt"></i>
+          </button>
+          <iframe src="https://zaha175.github.io/PHYSIKPANNELULTRA/" title="PHYSIK ULTRA NACHHILFE"></iframe>
+        </li>
         <li>
           Host Alpha - Online
           <button class="button" onclick="window.open('https://zaha175.github.io/PANNELMARCOFRAGEN/', '_blank')">
@@ -432,7 +433,7 @@
     <div class="section log-display" id="logs">
       <h2>Speicherprotokolle</h2>
       <p>[10:45] Host Alpha: System gestartet</p>
-       <iframe src="https://zaha175.github.io/CUBKUGEL/" title="Cub 3"></iframe>
+      <iframe src="https://zaha175.github.io/CUBKUGEL/" title="Cub 3"></iframe>
       <p>[10:47] Host Beta: Verbindung verloren</p>
       <p>[10:50] Host Gamma: Aktualisierung durchgeführt</p>
       <p>[10:55] Host Delta: Routineprüfung abgeschlossen</p>
@@ -441,10 +442,10 @@
         CUB 2 ÖFFNEN <i class="fas fa-external-link-alt"></i>
       </button>
       <iframe src="https://zaha175.github.io/PANNELMARCOFRAGEN1/" title="Externe Diagnose 1"></iframe>
-    <p>
-   <p><button class="button" onclick="window.open('https://zaha175.github.io/PHYSIKPANNELULTRA/', '_blank')">CUBSUPER <i class="fas fa-external-link-alt"></i></button></p>
-    <iframe src="https://zaha175.github.io/PHYSIKPANNELULTRA/" ></iframe>
-    <p>
+      <p>
+      <p><button class="button" onclick="window.open('https://zaha175.github.io/PHYSIKPANNELULTRA/', '_blank')">PHYSIK ULTRA NACHHILFE ÖFFNEN <i class="fas fa-external-link-alt"></i></button></p>
+      <iframe src="https://zaha175.github.io/PHYSIKPANNELULTRA/" title="PHYSIK ULTRA NACHHILFE"></iframe>
+      <p>
     </div>
 
     <div class="section control-panel" id="control">
@@ -456,41 +457,44 @@
         </button>
         <iframe src="https://zaha175.github.io/LEBENSALTER-RECHNER/" title="Cub 3"></iframe>
       </form>
-  <p>
-    <form>
+      <p>
+      <form>
         <label for="param">Parameter setzen:</label>
-       <iframe src="https://zaha175.github.io/CUBKUGEL/" title="Cub 3"></iframe>
+        <iframe src="https://zaha175.github.io/CUBKUGEL/" title="Cub 3"></iframe>
       </form>
-  <p>
-<form>
+      <p>
+      <form>
         <label for="param">Parameter setzen:</label>
         <button class="button" onclick="window.open('https://zaha175.github.io/FARBENTEST2/', '_blank')">
           PARAMETER 2 ÖFFNEN <i class="fas fa-external-link-alt"></i>
         </button>
         <iframe src="https://zaha175.github.io/FARBENTEST2/" title="Cub 3"></iframe>
       </form>
-     <p>
-  </div>
- </div>
-
-  <!-- Status und Diagnose -->
-    <div class="section status-display" id="status">
-      <h2>Status und Diagnose</h2>
-      <p>CPU-Auslastung: 45%</p>
-      <button class="button" onclick="window.open('https://zaha175.github.io/FIGURENVERGLEICHSTEST1/', '_blank')">
-        KONZENTRAT ÖFFNEN <i class="fas fa-external-link-alt"></i>
-      </button>
-      <iframe src="https://zaha175.github.io/FIGURENVERGLEICHSTEST1/" title="Cub 3"></iframe>
-      <p>RAM-Auslastung: 60%</p>
-      <button class="button" onclick="window.open('https://zaha175.github.io/PANNELMARCOFRAGEN1/', '_blank')">
-        DIAGNOSE ÖFFNEN <i class="fas fa-external-link-alt"></i>
-      </button>
-      <iframe src="https://zaha175.github.io/PANNELMARCOFRAGEN1/" title="Cub 2"></iframe>
-      <p>Netzwerkstatus: Stabil</p>
-      <iframe src="https://zaha175.github.io/CUBPANNEL/" title="Cub 3"></iframe>
-  </div>
+      <p>
     </div>
   </div>
+
+  <!-- Status und Diagnose -->
+  <div class="section status-display" id="status">
+    <h2>Status und Diagnose</h2>
+    <p>CPU-Auslastung: 45%</p>
+    <button class="button" onclick="window.open('https://zaha175.github.io/FIGURENVERGLEICHSTEST1/', '_blank')">
+      KONZENTRAT ÖFFNEN <i class="fas fa-external-link-alt"></i>
+    </button>
+    <iframe src="https://zaha175.github.io/FIGURENVERGLEICHSTEST1/" title="Cub 3"></iframe>
+    <p>RAM-Auslastung: 60%</p>
+    <button class="button" onclick="window.open('https://zaha175.github.io/PANNELMARCOFRAGEN1/', '_blank')">
+      DIAGNOSE ÖFFNEN <i class="fas fa-external-link-alt"></i>
+    </button>
+    <iframe src="https://zaha175.github.io/PANNELMARCOFRAGEN1/" title="Cub 2"></iframe>
+    <p>Netzwerkstatus: Stabil</p>
+    <iframe src="https://zaha175.github.io/CUBPANNEL/" title="Cub 3"></iframe>
+    <button class="button" onclick="window.open('https://zaha175.github.io/PHYSIKPANNELULTRA/', '_blank')">
+      PHYSIK ULTRA NACHHILFE ÖFFNEN <i class="fas fa-external-link-alt"></i>
+    </button>
+    <iframe src="https://zaha175.github.io/PHYSIKPANNELULTRA/" title="PHYSIK ULTRA NACHHILFE"></iframe>
+  </div>
+
   <script>
     // Funktionen für die Buttons "Bearbeiten" / "Melden"
     function modifyHost() {
@@ -529,7 +533,6 @@
       cpuUsageEl_section2.innerText = `CPU-Auslastung: ${cpuUsage}%`;
       ramUsageEl_section2.innerText = `RAM-Auslastung: ${ramUsage}%`;
       hostStatusEl_section2.innerText = `Host-Status: ${hostStatus}`;
-
 
       let logEntry = document.createElement('p');
       logEntry.classList.add('new-entry');
@@ -575,7 +578,6 @@
     const hostSphere_section2 = new THREE.Mesh(geometry_section2, material_section2);
     scene_section2.add(hostSphere_section2);
     camera_section2.position.z = 5;
-
 
     function animate() {
       requestAnimationFrame(animate);
